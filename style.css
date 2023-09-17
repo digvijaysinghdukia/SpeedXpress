@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Stencil+Display&family=El+Messiri&family=Gemunu+Libre&family=Orbitron&family=Russo+One&display=swap');
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: #dd99ff;
+
+}
+
+
+/*-------------bradlogo--------------*/
+.brand-logo{
+	position: absolute;
+	left: 1vw;
+	top:0px;
+	width: 10vw;
+	height: auto;
+	margin: 10px;
+	z-index: 3;
+}
+/*---------x---bradlogo----x---------*/
+
+
+/*   nav bar */
+
+nav{
+	position: fixed;
+	bottom: 0px;
+	height: 6vh;
+	width: 100vw;
+	background:#dd99ff;
+	z-index:2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav i{
+	font-size: 5vh;
+	color: #8100c1;
+	margin-right: 4vw;
+	margin-left:4vw ;
+}
+
+nav i:hover{
+	color: white;
+}
+
+.brand-logo-teb {
+	position: relative;
+	width: 100%;
+	height:auto;
+	background: #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.brand-logo-teb img{
+	width: 10vw;
+	height: auto;
+	
+}
+
+#home,#cars,#about,#contact{
+	position: absolute;
+	background:#fff;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	width: 90vw;
+	height: 100vh;
+	z-index: 3;
+	display: none;
+	overflow: hidden;
+}
+
+#cancel{
+	position: absolute;
+	font-size: 4vh;
+	right: 0px;
+	top: 0px;
+	margin: 7px;
+	color: red;
+	z-index: 100;
+
+}
+/*car item teb*/
+.car-list{
+	background: transparent;
+	width: 100%;
+	height: 87%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.car-item{
+	width:25%;
+	height:35%;
+	background: linear-gradient(to bottom,#8100c1,#dd99ff);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	margin:15px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transition-duration: 0.5s;
+	overflow: hidden;
+}
+
+.car-item:hover{
+	width: 30%;
+	height: 40%;
+}
+.car-item img{
+	width: 100%;
+	height: auto;
+	
+}
+
+.car-item-name{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transition-duration: 0.5s;
+	color: transparent;
+	font-family: 'Audiowide', cursive;
+	text-align: center;
+}
+
+.car-item-name:hover{
+	color:#fbfbfb;
+	font-size: 30px;
+	background: #00000073;
+}
+
+
+.container1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	height: 100vh;
+}
+
+.container1 .car-model{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 20px;
+		transform-style: preserve-3d;
+		transition-duration: 1.5s;
+	}
+.container1 .car-model img{
+	display: inline-block;
+	width: 53vw;
+	height: auto;
+	margin: 10px;
+	-webkit-box-reflect: below -10px linear-gradient(transparent,transparent,#0006);
+}
+
+.container1 .card{
+	position: relative;
+	width: 35vw;
+	height: 55vw;
+	background: #287bff;
+	border-radius: 20px;
+	border-bottom-left-radius: 160px;
+	border-bottom-right-radius: 160px;
+	box-shadow: 0 15px 0 #fff,
+	inset 0 -15px 0 rgba(255,255,255,0.25),
+	0 45px 0 rgba(0,0,0,0.15);
+	overflow: hidden;
+	background: linear-gradient(to bottom,#ff2ae0,#645bf6);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 10px;
+	margin-bottom: 40px;
+}
+
+.container1 .card::before{
+	content: '';
+	position: absolute;
+	top: -140px;
+	left: -40%;
+	width: 100%;
+	height: 120%;
+	background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
+	transform: rotate(35deg);
+	pointer-events: none;
+	filter: blur(5px);
+}
+
+.container1 .icon{
+	position: relative;
+	width: 140px;
+	height: 120px;
+	background: #3c2846;;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+	inset 0 -8px 0 #fff;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+
+	}
+.container1 .icon::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border-top-right-radius: 50px;
+	box-shadow: 11px -11px 0 11px #3c2846;
+}
+
+.container1 .icon::after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border-top-left-radius: 50px;
+	box-shadow: -11px -11px 0px 11px #3c2846;
+}
+
+.container1 .icon img{
+	position: relative;
+	width: 6rem;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.container1 .content{
+	position: absolute;
+	width: 100%;
+	padding: 30px;
+	padding-top: 140px;
+	padding-left: 60px;
+	text-align:center;
+
+
+}
+
+.container1 .content h2{
+	font-size:2.3vw;
+	color: white;
+	margin: 20px;
+	letter-spacing: 2px;
+	font-family: 'Orbitron', sans-serif;
+	}
+
+.container1 .content li{
+	list-style-type: disclosure-closed;
+	text-align: left;
+	color: white;
+	letter-spacing: 1px;
+	margin-left: 1.5vw;
+	font-size: 1.5vw;
+	font-family: 'Shippori Mincho B1', serif;
+}
+
+/*contact us from*/
+#contactus{
+	width: 100%;
+	height: 100%;
+	background-image: url(./media/t.jpg);
+	background-repeat: repeat;
+	display:none;
+}
+#contactus .contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#contactus .contact .content{
+	max-width: 100%;
+	text-align: center;
+}
+#contactus .contact .content h2{
+	font-size: 4vw;
+	font-weight: 500;
+	color: #8100c1;
+	font-family: 'Orbitron', sans-serif;
+}
+#contactus .contact .content p{
+	font-weight: 300;
+	color: #fff;
+	font-size: 1.5vw;
+}
+#contactus .container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+
+}
+#contactus .container .contactinfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+#contactus .container .contactinfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+ #contactus .container .contactinfo .box .icon{
+	min-width: 5vw;
+	height: 5vw;
+	background: #8100c1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 2vw;
+	color: #fff;
+}
+#contactus .container .contactinfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 1.5vw;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+#contactus .container .contactinfo .box .text h3{
+	font-weight: 500;
+	color: #8100c1;
+	font-size: 2vw;
+	font-family: 'Orbitron', sans-serif;
+}
+#contactus .contactfrom{
+	width: 30vw;
+	height: 35vw;
+	padding: 40px;
+	background: transparent;
+
+}
+#contactus .contactfrom h2{
+	font-size: 2.5vw;
+	color: #8100c1;
+	font-weight: 500;
+	font-family: 'Orbitron', sans-serif;
+}
+#contactus .contactfrom .inputbox{
+	position: relative ;
+	width: 100%;
+	margin-top: 7%;
+}
+#contactus .contactfrom .inputbox input,
+#contactus .contactfrom .inputbox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 1.5vw;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	outline: none;
+	resize: none;
+	background: transparent;
+}
+#contactus .contactfrom .inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 1.5vw;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #fff;
+}
+#contactus .contactfrom .inputbox input:focus ~ span,
+#contactus .contactfrom .inputbox input:valid ~ span,
+#contactus .contactfrom .inputbox textarea:focus ~ span,
+#contactus .contactfrom .inputbox textarea:valid ~ span{
+	color: #0401b5;
+	font-size: 1.3vw;
+	transform: translateY(-2vw);
+}
+#contactus .contactfrom .inputbox input[type="submit"]{
+	width: 6vw;
+	background: #8100c1;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.5vw;
+}
+
+/*about us*/
+#about-us{
+	width: 100vw;
+	height: 100vh;
+	display: none;
+} 
+
+.about-wrapper{
+	height: 100vh;
+
+}
+.about-left{
+	background: #8300c1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	width: 100vw;
+}
+.about-left-content > div{
+	background: #dd99ff;
+	padding: 4rem 4rem 2.5rem 5rem;
+	text-align: center;
+}
+.about-left-content{
+	box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+	-webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+}
+.about-img img{
+	display: block;
+	width: 200px;
+}
+.about-img{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;                                                                   
+	border-radius: 50%;
+	transition: all 0.5s ease-in-out;
+}
+.shadow{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	cursor: pointer;
+}
+.shadow::after{
+	content:"";
+	position: absolute;
+	background: rgba(0,0,0,0.4);
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -20px;
+	height: 7px;
+	width: 50px;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	opacity: 0;
+	transition: all 0.6s ease;
+}
+.shadow:hover .about-img{
+	transform: translateY(-10px);	
+}
+.shadow:hover::after{
+	opacity: 1;
+}
+.about-left-content h2{
+	font-size: 2rem;
+	margin: 2.2rem 0 0.6rem 0;
+	line-height: 1.2;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #fff;
+}
+.about-left-content h3{
+	text-transform:uppercase;
+	font-weight: 300;
+	leller-spacing: 5px;
+	margin-top: 1.2rem;
+}
+.icons{
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 0.8rem 0;
+}
+.icons li{
+	list-style-type: none;
+	background: #8300c1;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	margin: 0 0.5rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+.icons li:hover{
+	background: #fff;
+	color: #8300c1;
+	border: 2px solid #8300c1;
+	box-shadow: inset #8300c1 1px 1px 10px 2px;
+}
+.about-right{
+	background: #fff;
+	height: 50vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5rem;
+	text-align: center;
+}
+.about-right h1{
+	font-size: 7rem;
+	text-transform: uppercase;
+}
+.about-right h1 span{
+	color: #8300c1;
+}
+.about-right h2{
+	font-weight: 600;
+}
+.about-btns{
+	display: flex;
+	margin: 2rem 0;
+}
+.btn{
+	border: none;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	border: 2px solid #000;
+	border-radius: 20px;
+	padding: 0.55rem 0;
+	width: 130px;
+	font-weight: 600;
+	background: transparent;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+.btn.btn-pink{
+	background: #8300c1;
+	color: #fff;
+	border-color: #8300c1;
+	transition: all 0.5s ease-in-out;
+}
+.btn-pink:hover{
+	background: transparent;
+	border-color: #8300c1;
+	color: #000;
+}
+.btn.btn-white{
+	transition:all 0.5s ease-in-out ;
+}
+.btn.btn-white:hover{
+	background: #8300c1;
+	border-color: #8300c1;
+	color: #fff;
+}
+
+.about-pera p{
+	font-weight: 300;
+	padding: 0.5rem;
+	opacity: 0.8;
+	font-size: 1.4vw;
+}
+
+#m1,#T,#f,#bmw,#bu,#rr{
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
+
+#m1{
+	display: block;
+}
+.cars{
+	display: block;
+}
+
+
+@media screen and (min-width: 991px){
+	.about-wrapper{
+		display: flex;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.about-left{
+		position: relative;
+		width: 40vw;
+		height: 100vh;
+	}
+	.about-left-content{
+		position: absolute;
+		right: -50px;
+	}
+	.about-right{
+		width: 60vw;
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	/*-------------bradlogo--------------*/
+	.brand-logo{
+	width: 10vh;
+	height: auto;
+	}
+	/*brand-logo in teb*/
+	.brand-logo-teb img {
+    width: 10vh;
+    height: auto;
+	}
+	/*all car content*/
+
+	.container1 .car-model img {
+		width: 90vw;
+	}
+	.container1 .card {
+	    position: relative;
+	    width: 46vh;
+	    height: 55vh;
+	  }
+	.container1 .content h2 {
+	    font-size: 3vh;
+	    margin-top: 6vh;
+	  }
+
+	.container1 .content li {
+		 font-size: 2vh;
+	}
+
+/*car teb list content*/
+
+	.car-item {
+    width: 45%;
+    height: 27%;
+	}
+	.car-item:hover{
+	width: 45%;
+	height: 27%;
+	}
+	.car-item-name{
+		align-items: end;
+		color: #fff;
+		font-size: xx-large;
+	}
+
+  	/*contact us*/
+ 	.container1 .content{
+  	padding: 50px;
+  	}
+ 	 #contactus .container{
+  	flex-direction: column;
+  	}
+  	#contactus .container .contactinfo{
+  	margin-bottom: 40px;
+  	}
+ 	 #contactus .container .contactinfo,
+ 	 #contactus .contactfrom{
+  	width: 100%;
+  	}
+  	#contactus .contact .content h2{
+	font-size: 4vh;
+	}
+	#contactus .contact .content p{
+		font-size: 1.5vh;
+	}
+	#contactus .container .contactinfo .box .icon{
+	min-width: 5vh;
+	height: 5vh;
+	font-size: 2vh;
+	}
+	#contactus .container .contactinfo .box .text{
+		font-size: 1.5vh;
+	}
+	#contactus .container .contactinfo .box .text h3{
+		font-size: 2vh;
+	}
+	#contactus .contactfrom{
+		height: 40vh;
+	}
+	#contactus .contactfrom h2{
+		font-size: 2.5vh;
+	}
+	#contactus .contactfrom .inputbox input,
+	#contactus .contactfrom .inputbox textarea{
+		font-size: 1.5vh;
+	}
+	#contactus .contactfrom .inputbox span{
+		font-size: 1.5vh;
+	}
+	#contactus .contactfrom .inputbox input:focus ~ span,
+	#contactus .contactfrom .inputbox input:valid ~ span,
+	#contactus .contactfrom .inputbox textarea:focus ~ span,
+	#contactus .contactfrom .inputbox textarea:valid ~ span{
+		font-size: 1.3vh;
+		transform: translateY(-2vh);
+	}
+	#contactus .contactfrom .inputbox input[type="submit"]{
+		width: 6vh;
+		font-size: 1.5vh;
+	}
+	.about-pera p{
+		font-size: 1.4vh;
+	}
+
+	/*about us*/
+}
